@@ -24,4 +24,3 @@ def get_prime_factors(num: int) -> List[int]:
         if len(factors)== 2:
             primes.append(i)
         return primes
-    pass
