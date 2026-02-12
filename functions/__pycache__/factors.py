@@ -14,7 +14,9 @@ def get_factors(num: int, prime:bool=False) -> List[int]:
         if num % i == 0:
             factors.append(i)
         if prime:
-            facts = [f for f in factors if len(get_factors(f)==2)]
+            factors = [
+                f for f in factors if len(get_factors(f)==2)
+                ]
         return factors
 
 def get_prime_factors(num: int) -> List[int]:
